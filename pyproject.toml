@@ -1,0 +1,38 @@
+[project]
+name = "quantcoda"
+version = "0.1.5"
+description = "QuantCoda A 股量化数据 API 官方 Python SDK：行情、财务、资金流、龙虎榜，一个 Key 全部拿到"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+authors = [{ name = "QuantCoda", email = "support@quantcoda.com" }]
+keywords = ["quant", "a-share", "stock", "market-data", "financial-data", "api"]
+classifiers = [
+    "Intended Audience :: Financial and Insurance Industry",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial :: Investment",
+]
+dependencies = [
+    "requests>=2.28",
+    "pandas>=1.5",
+]
+
+[project.urls]
+"Official Website" = "https://quantcoda.com"
+Documentation = "https://quantcoda.com/docs"
+"Create API Key" = "https://quantcoda.com/register?utm_source=pypi&utm_medium=referral&utm_campaign=python_sdk&utm_content=project_links"
+Pricing = "https://quantcoda.com/pricing?utm_source=pypi&utm_medium=referral&utm_campaign=python_sdk&utm_content=project_links"
+"Hosted MCP Server" = "https://quantcoda.com/mcp"
+Repository = "https://github.com/QuantCoda/quantcoda-python-public"
+Issues = "https://github.com/QuantCoda/quantcoda-python-public/issues"
+Changelog = "https://quantcoda.com/changelog"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["quantcoda"]
